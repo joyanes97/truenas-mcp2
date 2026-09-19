@@ -24,7 +24,10 @@ TRUENAS_URL=https://truenas.local TRUENAS_API_KEY=1-abc123 npx truenas-mcp
 Claude Code:
 
 ```bash
-claude mcp add truenas -- npx -y truenas-mcp   --env TRUENAS_URL=https://truenas.local   --env TRUENAS_API_KEY=1-your-api-key-here
+claude mcp add truenas \
+  --env TRUENAS_URL=https://truenas.local \
+  --env TRUENAS_API_KEY=1-your-api-key-here \
+  -- npx -y truenas-mcp
 ```
 
 Get the API key from the TrueNAS UI: **Settings > API Keys > Add**.
@@ -97,10 +100,11 @@ Add to your `claude_desktop_config.json`:
 ### Claude Code
 
 ```bash
-claude mcp add truenas -- npx -y truenas-mcp \
+claude mcp add truenas \
   --env TRUENAS_URL=https://truenas.local \
   --env TRUENAS_API_KEY=1-your-api-key-here \
-  --env TRUENAS_VERIFY_SSL=false
+  --env TRUENAS_VERIFY_SSL=false \
+  -- npx -y truenas-mcp
 ```
 
 ## How It Works — Hierarchical Tool Design

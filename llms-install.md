@@ -15,9 +15,10 @@ self-signed certs (common on a local NAS).
 ## Install
 
 ```bash
-claude mcp add truenas -- npx -y truenas-mcp \
+claude mcp add truenas \
   --env TRUENAS_URL=https://truenas.local \
-  --env TRUENAS_API_KEY=1-your-api-key-here
+  --env TRUENAS_API_KEY=1-your-api-key-here \
+  -- npx -y truenas-mcp
 ```
 
 ## Verifying the install
