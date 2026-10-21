@@ -238,6 +238,8 @@ Other MCP servers and agent infrastructure built by the same author:
   debate as an MCP tool.
 - [discord-mcp](https://github.com/spranab/discord-mcp) — run a Discord
   server from an AI assistant, 30+ actions behind one hierarchical tool.
+- [icantmarket-mcp](https://github.com/spranab/icantmarket-mcp) — browse
+  products and post asks/reviews on icantmarket from any MCP client.
 
 ## License
 
